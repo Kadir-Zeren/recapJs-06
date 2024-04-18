@@ -54,16 +54,55 @@
 //   return f;
 // };
 
-const fakto = (n) => {
-  if (n <= 1) {
-    return 1;
-  } else {
-    return n * fakto(n - 1);
-  }
+// const fakto = (n) => {
+//   if (n <= 1) {
+//     return 1;
+//   } else {
+//     return n * fakto(n - 1);
+//   }
+// };
+
+// const number = +prompt("n:");
+
+// number < 0
+//   ? alert("Number should be bigger than zero")
+//   : console.log(`Fakto(${number})= ${fakto(number)}`);
+
+let number1 = 3;
+let number2 = 5;
+console.log(number1);
+
+const funk1 = () => {
+  number1 = 44;
+  let number2 = 7;
+  console.log("LOCAL:", number2);
 };
 
-const number = +prompt("n:");
+funk1();
 
-number < 0
-  ? alert("Number should be bigger than zero")
-  : console.log(`Fakto(${number})= ${fakto(number)}`);
+console.log(number1);
+console.log("LOCAL:", number2);
+
+{
+  let x = 77;
+  x++;
+  console.log(x);
+}
+
+number2 = 4;
+console.log(number2);
+
+var number3;
+console.log(number3);
+number3 = 101;
+console.log(number3);
+
+if (number3 === 102) {
+  let result = "Hi";
+  console.log(result);
+} else {
+  console.log(result);
+  var result = "Hello";
+}
+
+console.log(result);
